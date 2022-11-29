@@ -1,38 +1,35 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+.content {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 90px;
+    padding: 20px;
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+   margin: 0;
+   padding: 0;
+}
+html {
+    background: #0F1319;
+    background-attachment: fixed;
+    font-family: 'Fira Sans';
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.waves {
+    position: fixed;
+    left: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#wave1 {
+    z-index: -99;
+    bottom: 0px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#wave2 {
+    z-index: -100;
+    bottom: 20px;
 }
