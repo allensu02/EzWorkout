@@ -7,10 +7,13 @@ export function Welcome() {
 
       <div>
         <h1 className='title_style'>
-          Welcome to the EzWorkout
+          Welcome to EzWorkout!
         </h1>
+        <a href="/#/LegCurl" className='button_style'>
+          Leg Curls
+        </a>
       </div>
-      
+
 
     </div>
   )

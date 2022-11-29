@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React, { Component } from "react";
 import { Welcome } from "./Components/Welcome/Welcome";
+import { LegCurl } from "./Components/LegCurl/LegCurl";
 import { HashRouter, NavLink, Route, Routes } from "react-router-dom";
 
 
@@ -11,21 +12,8 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<Welcome />} />
-          
+          <Route path="/LegCurl" element={<LegCurl />} />
         
-          
-          {/* <Route
-            path="/filter"
-            element={
-              <>
-                <Header></Header>
-                <NavBar></NavBar>
-                <div className="content">
-                  <Filter />
-                </div>
-              </>
-            }
-          /> */}
         </Routes>
         <svg
           className="waves"
