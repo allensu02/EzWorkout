@@ -4,6 +4,8 @@ import React, { Component } from "react";
 import { Welcome } from "./Components/Welcome/Welcome";
 import { LegCurl } from "./Components/LegCurl/LegCurl";
 import { HashRouter, NavLink, Route, Routes } from "react-router-dom";
+import { TricepsExtension } from './Components/TricepsExtension/TricepsExtension';
+import { PressShoulder } from './Components/PressShoulder/PressShoulder';
 
 
 function App() {
@@ -13,7 +15,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Welcome />} />
           <Route path="/LegCurl" element={<LegCurl />} />
-        
+          <Route path="/TricepsExtension" element={<TricepsExtension />} />
+          <Route path="/MultiPressShoulder" element={<PressShoulder />} />
         </Routes>
         <svg
           className="waves"
